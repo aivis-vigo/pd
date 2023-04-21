@@ -4,10 +4,10 @@ require_once "vendor/autoload.php";
 
 use Models\App;
 
-$test = new App();
+$application = new App();
 
 try {
-    $test->mainMenu();
+    $application->mainMenu();
 } catch (GuzzleHttp\Exception\GuzzleException $e) {
     echo $e . PHP_EOL;
 }
